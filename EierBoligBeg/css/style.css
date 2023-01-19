@@ -61,8 +61,9 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 1.2rem 10%;
     background-color: #24252a;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -71,6 +72,10 @@ footer {
     text-align: center;
     background-color: #24252a;
     color: #EEEEEE;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 
@@ -139,7 +144,7 @@ footer {
 }
 
 .overlay--active {
-    width: 100%;
+    width: 75%;
 }
 
 .overlay__content {
@@ -172,25 +177,25 @@ footer {
 }
 
 /*------TABLE------*/
-#table-template {
+table {
     border-collapse: collapse;
     width: 100%;
 }
 
-#table-template td, th {
+table td, th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#table-template tr:nth-child(even) {
+table tr:nth-child(even) {
     background-color: #e5e3e3;
 }
 
-#table-template tr:hover {
+table tr:hover {
     background-color: #ddd;
 }
 
-#table-template th {
+table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;

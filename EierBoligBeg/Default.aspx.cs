@@ -14,7 +14,7 @@ namespace DataTableSample
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LabelNumBoliger.Text = GetNumOfBoliger().ToString();//hvorfor ToString her?
+            //LabelNumBoliger.Text = GetNumOfBoliger().ToString();//hvorfor ToString her?
         }
 
         /// <summary>
