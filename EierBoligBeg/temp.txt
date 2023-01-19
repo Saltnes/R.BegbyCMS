@@ -1,0 +1,160 @@
+         /*SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår
+ FROM Bolig
+          INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id
+          INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id
+          INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id
+          INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id
+          INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr
+          INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår
+ WHERE Bolig.PostNr = 1642
+ 
+ SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår
+ FROM Bolig
+          INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id
+          INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id
+          INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id
+          INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id
+          INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr
+          INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår
+ WHERE Byggår.Byggår = 1920
+ 
+ SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår
+ FROM Bolig
+          INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id
+          INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id
+          INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id
+          INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id
+          INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr
+          INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår
+ WHERE Energimerking.Energimerking = 'D'
+ 
+ SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår
+ FROM Bolig
+          INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id
+          INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id
+          INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id
+          INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id
+          INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr
+          INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår
+ WHERE Bolig.Tomteareal > 80
+ 
+ SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår
+ FROM Bolig
+          INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id
+          INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id
+          INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id
+          INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id
+          INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr
+          INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår
+ WHERE Eier.Tlf = 94812567
+ 
+ SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår
+ FROM Bolig
+          INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id
+          INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id
+          INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id
+          INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id
+          INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr
+          INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår
+ WHERE Eier.Fornavn = 'Erik' AND Eier.Etternavn = 'Tesman'
+ 
+ SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår
+ FROM Bolig
+          INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id
+          INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id
+          INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id
+          INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id
+          INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr
+          INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår
+ WHERE Byggår.Byggår BETWEEN 1920 AND 1945 */
+ 
+ 
+ 
+ ------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ public List<Weather> GetDailyWeatherData(int day, int month, int year)
+        {
+            SqlParameter param;
+            var connectionString = ConfigurationManager.ConnectionStrings["ConnAir"].ConnectionString;
+            DataTable dt = new DataTable();
+            List<Weather> weathers = new List<Weather>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd =
+                    new SqlCommand("SELECT * FROM KjerreWeather WHERE year =@Year AND month =@Month AND day =@Day", conn);
+                cmd.CommandType = CommandType.Text;
+
+                param = new SqlParameter("@day", SqlDbType.Int);
+                param.Value = day;
+                cmd.Parameters.Add(param);
+
+                param = new SqlParameter("@month", SqlDbType.Int);
+                param.Value = month;
+                cmd.Parameters.Add(param);
+                
+                param = new SqlParameter("@year", SqlDbType.Int);
+                param.Value = year;
+                cmd.Parameters.Add(param);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Weather w = new Weather();
+                    w.Year = (int)reader["year"];
+                    w.Month = (int)reader["month"];
+                    w.Day = (int)reader["day"];
+                    w.Hour = (int)reader["hour"];
+                    w.AirTemperature = (double)reader["AirTemperature"];
+                    w.Humidity = (double)reader["Humidity"];
+                    w.WindSpeed = (double)reader["WindSpeed"];
+                    w.WindGust = (double)reader["WindGust"];
+                    w.WindDirection = (int)reader["WindDirection"];
+                    w.Rain = (string)reader["rain"];
+
+                    weathers.Add(w);
+                }
+
+                dt.Load(reader);
+
+                reader.Close();
+                conn.Close();
+            }
+
+            return weathers;
+        }
+
+
+
+
+ ------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+using System;
+
+namespace BusinessObjects
+{
+    public class Weather
+    {
+        public int Id { get; }
+        public int Year { get; set; }
+        public int Month { get; set; }
+        public int Day { get; set; }
+        public int Hour { get; set; }
+        public DateTime DateAndTime { get; set; }
+        public double AirTemperature { get; set; }
+        public double Humidity { get; set; }
+        public double WindSpeed { get; set; }
+        public double WindGust { get; set; }
+        public int WindDirection { get; set; }
+        public string Rain { get; set; }
+    }
+}

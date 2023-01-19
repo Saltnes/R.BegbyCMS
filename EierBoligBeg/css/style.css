@@ -78,7 +78,10 @@ footer {
     margin-top: 1rem;
 }
 
-
+.button {
+    font-family: "Montserrat", sans-serif;
+    padding: 0.1rem;
+}
 
 .logo {
     width: 3.5rem;

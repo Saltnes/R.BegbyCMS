@@ -46,10 +46,10 @@
             <br/>
             Søk med telefonnummer
             <asp:TextBox ID="TextBoxSearchByPhone" runat="server"></asp:TextBox>
-            <asp:Button ID="ButtonSearchByPhone" runat="server" Text="Søk"/>
+            <asp:Button ID="ButtonSearchByPhone" class="button" runat="server" Text="Søk"/>
             <br/>
             Viser alle boliger
-            <asp:Button ID="ButtonShowAllBoliger" runat="server" Text="Vis alle Boliger"/>
+            <asp:Button ID="ButtonShowAllBoliger" class="button" runat="server" Text="Vis alle Boliger"/>
             <br/>
             <br/>
             <br/>

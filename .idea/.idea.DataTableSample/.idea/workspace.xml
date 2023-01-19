@@ -5,15 +5,9 @@
     <projectFile kind="IisApplication">EierBoligBeg/EierBoligBeg.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Initial">
-      <change afterPath="$PROJECT_DIR$/EierBoligBeg/About.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EierBoligBeg/About.aspx.cs" afterDir="false" />
+    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Ab">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBLayer/DBLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DBLayer/DBLayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/EierBoligBeg.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/EierBoligBeg.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Web.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EierBoligBeg/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +16,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6e9fb119509845b082a774d1a5c883f8525bb0/78/e17a9337/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx.designer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Saltn\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Saltn\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Saltn\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Saltn\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Saltn\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Saltn\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.DataTableSample - IIS Express">
     <configuration name="DataTableSample - IIS Express" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -110,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674118585332</updated>
       <workItem from="1674118586457" duration="473000" />
-      <workItem from="1674119149686" duration="7942000" />
+      <workItem from="1674119149686" duration="9877000" />
     </task>
     <task id="LOCAL-00001" summary="lk">
       <created>1674126351884</created>
@@ -126,7 +123,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674126425016</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Style SQL Samples">
+      <created>1674133353666</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674133353666</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Query">
+      <created>1674133383717</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674133383717</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ab">
+      <created>1674133692711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674133692711</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +156,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="lk" />
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Style SQL Samples" />
+    <MESSAGE value="Query" />
+    <MESSAGE value="Ab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ab" />
   </component>
 </project>
