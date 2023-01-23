@@ -5,11 +5,7 @@
     <projectFile kind="IisApplication">EierBoligBeg/EierBoligBeg.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="var">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/About.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/About.aspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" afterDir="false" />
-    </list>
+    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="CSS" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +18,7 @@
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/EierBoligBeg/About.aspx" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/EierBoligBeg/Default.aspx" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/EierBoligBeg/Default.aspx" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -118,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674118585332</updated>
       <workItem from="1674118586457" duration="473000" />
-      <workItem from="1674119149686" duration="25751000" />
+      <workItem from="1674119149686" duration="26254000" />
     </task>
     <task id="LOCAL-00001" summary="lk">
       <created>1674126351884</created>
@@ -197,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674475876475</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="CSS">
+      <created>1674477511585</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674477511585</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +222,26 @@
     <MESSAGE value="Up" />
     <MESSAGE value="Search" />
     <MESSAGE value="var" />
-    <option name="LAST_COMMIT_MESSAGE" value="var" />
+    <MESSAGE value="CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/EierBoligBeg/About.aspx</url>
+          <properties documentPath="C:\Users\Saltn\RiderProjects\BoligEiere-DataTableSample\EierBoligBeg\About.aspx" initialLine="0" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
