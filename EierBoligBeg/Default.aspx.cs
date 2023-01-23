@@ -23,18 +23,17 @@ namespace DataTableSample
         {
             var dbl = new DBLayer.DBLayer();
             GridViewBoligEiere.DataSource = dbl.GetAllBolig();
+            
             GridViewBoligEiere.DataBind();
         }
 
         protected void ButtonSearchByPhone_OnClick(object sender, EventArgs e)
         {
             var dbl = new DBLayer.DBLayer();
-            string searchValue = TextBoxSearchByPhone.Text;
+            var searchValue = TextBoxSearchByPhone.Text;
 
             GridViewByPostnr.DataSource = dbl.GetBoligInfoByPostnr(searchValue);
             GridViewByPostnr.DataBind();
-
-
         }
         
     }

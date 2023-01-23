@@ -5,11 +5,11 @@
     <projectFile kind="IisApplication">EierBoligBeg/EierBoligBeg.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Up">
+    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Search">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/BLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/BLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessObjects/BObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/BObjects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.designer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674118585332</updated>
       <workItem from="1674118586457" duration="473000" />
-      <workItem from="1674119149686" duration="23171000" />
+      <workItem from="1674119149686" duration="24152000" />
     </task>
     <task id="LOCAL-00001" summary="lk">
       <created>1674126351884</created>
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674472418633</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Search">
+      <created>1674474527684</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674474527684</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +209,7 @@
     <MESSAGE value="DBL" />
     <MESSAGE value="Show All" />
     <MESSAGE value="Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Up" />
+    <MESSAGE value="Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search" />
   </component>
 </project>
