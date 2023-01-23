@@ -5,16 +5,12 @@
     <projectFile kind="IisApplication">EierBoligBeg/EierBoligBeg.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Temp">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="DBL">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessLayer/BusinessLayer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/BusinessLayer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessLayer/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/BLayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessObjects/BusinessObjects.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/BusinessObjects.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessObjects/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/BObjects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DBLayer/DBLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DBLayer/DBLayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.designer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674118585332</updated>
       <workItem from="1674118586457" duration="473000" />
-      <workItem from="1674119149686" duration="13690000" />
+      <workItem from="1674119149686" duration="19787000" />
     </task>
     <task id="LOCAL-00001" summary="lk">
       <created>1674126351884</created>
@@ -165,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674135355313</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="DBL">
+      <created>1674459481012</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674459481012</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +184,7 @@
     <MESSAGE value="Query" />
     <MESSAGE value="Ab" />
     <MESSAGE value="Temp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Temp" />
+    <MESSAGE value="DBL" />
+    <option name="LAST_COMMIT_MESSAGE" value="DBL" />
   </component>
 </project>
