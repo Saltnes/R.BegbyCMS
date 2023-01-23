@@ -25,5 +25,10 @@ namespace DataTableSample
             GridViewBoligEiere.DataSource = dbl.GetAllBolig();
             GridViewBoligEiere.DataBind();
         }
+
+        protected void ButtonSearchByPhone_OnClick(object sender, EventArgs e)
+        {
+            var dbl = new DBLayer.DBLayer();
+        }
     }
 }

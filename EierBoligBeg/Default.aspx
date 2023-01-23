@@ -46,9 +46,9 @@
             <br/>
             Søk med postnr
             <asp:TextBox ID="TextBoxSearchByPhone" runat="server"></asp:TextBox>
-            <asp:Button ID="ButtonSearchByPhone" class="button" runat="server" Text="Søk"/>
+            <asp:Button ID="ButtonSearchByPhone" OnClick="ButtonSearchByPhone_OnClick" class="button" runat="server" Text="Søk"/>
             <br/>
-            Viser alle boliger
+            <br/>
             <asp:Button ID="ButtonShowAllBoliger" OnClick="ButtonShowAllBoliger_OnClick" class="button" runat="server" Text="Vis alle Boliger"/>
             <br/>
             <br/>
