@@ -48,6 +48,8 @@
             <asp:TextBox ID="TextBoxSearchByPhone" runat="server"></asp:TextBox>
             <asp:Button ID="ButtonSearchByPhone" OnClick="ButtonSearchByPhone_OnClick" class="button" runat="server" Text="Søk"/>
             <br/>
+            <asp:GridView ID="GridViewByPostnr" runat="server"></asp:GridView>
+            <br/>
             <br/>
             <asp:Button ID="ButtonShowAllBoliger" OnClick="ButtonShowAllBoliger_OnClick" class="button" runat="server" Text="Vis alle Boliger"/>
             <br/>

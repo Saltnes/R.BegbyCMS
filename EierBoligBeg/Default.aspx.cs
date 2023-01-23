@@ -29,6 +29,13 @@ namespace DataTableSample
         protected void ButtonSearchByPhone_OnClick(object sender, EventArgs e)
         {
             var dbl = new DBLayer.DBLayer();
+            string searchValue = TextBoxSearchByPhone.Text;
+
+            GridViewByPostnr.DataSource = dbl.GetBoligInfoByPostnr(searchValue);
+            GridViewByPostnr.DataBind();
+
+
         }
+        
     }
 }
