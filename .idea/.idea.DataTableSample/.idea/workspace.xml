@@ -5,11 +5,10 @@
     <projectFile kind="IisApplication">EierBoligBeg/EierBoligBeg.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Search">
+    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="var">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessLayer/BLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/BLayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessObjects/BObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/BObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EierBoligBeg/About.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/About.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +17,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6e9fb119509845b082a774d1a5c883f8525bb0/78/e17a9337/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/BusinessLayer/BLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/EierBoligBeg/Default.aspx" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/EierBoligBeg/Default.aspx" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx.designer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674118585332</updated>
       <workItem from="1674118586457" duration="473000" />
-      <workItem from="1674119149686" duration="24152000" />
+      <workItem from="1674119149686" duration="25751000" />
     </task>
     <task id="LOCAL-00001" summary="lk">
       <created>1674126351884</created>
@@ -190,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674474527684</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="var">
+      <created>1674475876475</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674475876475</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +217,7 @@
     <MESSAGE value="Show All" />
     <MESSAGE value="Up" />
     <MESSAGE value="Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search" />
+    <MESSAGE value="var" />
+    <option name="LAST_COMMIT_MESSAGE" value="var" />
   </component>
 </project>

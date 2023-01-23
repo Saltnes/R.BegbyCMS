@@ -45,15 +45,12 @@
             <br/>
             <br/>
             Søk med postnr
-            <asp:TextBox ID="TextBoxSearchByPhone" runat="server"></asp:TextBox>
+            <label>PostNR: <asp:TextBox ID="TextBoxSearchByPhone" runat="server"></asp:TextBox></label>
             <asp:Button ID="ButtonSearchByPhone" OnClick="ButtonSearchByPhone_OnClick" class="button" runat="server" Text="Søk"/>
             <br/>
             <asp:GridView ID="GridViewByPostnr" runat="server"></asp:GridView>
             <br/>
-            <br/>
             <asp:Button ID="ButtonShowAllBoliger" OnClick="ButtonShowAllBoliger_OnClick" class="button" runat="server" Text="Vis alle Boliger"/>
-            <br/>
-            <br/>
             <br/>
             <asp:GridView ID="GridViewBoligEiere" runat="server"></asp:GridView>
             <!--SEARCH BY BUILD YEAR | BETWEEN BUILD YEARS x=>y | SEARCH BY NAME | SEARCH BY PHONE NUMBER | SEARCH BY POSTNR |   -->
