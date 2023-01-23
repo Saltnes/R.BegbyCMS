@@ -5,10 +5,16 @@
     <projectFile kind="IisApplication">EierBoligBeg/EierBoligBeg.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Ab">
+    <list default="true" id="a31520b6-70a0-4173-8097-84e472b4311c" name="Changes" comment="Temp">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DataTableSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/BusinessLayer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/BusinessLayer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/BLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessObjects/BusinessObjects.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/BusinessObjects.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessObjects/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/BObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBLayer/DBLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DBLayer/DBLayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EierBoligBeg/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +25,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6e9fb119509845b082a774d1a5c883f8525bb0/78/e17a9337/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/DBLayer/DBLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Saltn/RiderProjects/BoligEiere-DataTableSample/EierBoligBeg/Default.aspx" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Default.aspx.designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EierBoligBeg/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -43,6 +51,12 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ],
     "rider.external.source.directories": [
       "C:\\Users\\Saltn\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
       "C:\\Users\\Saltn\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
@@ -107,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674118585332</updated>
       <workItem from="1674118586457" duration="473000" />
-      <workItem from="1674119149686" duration="9877000" />
+      <workItem from="1674119149686" duration="13690000" />
     </task>
     <task id="LOCAL-00001" summary="lk">
       <created>1674126351884</created>
@@ -144,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674133692711</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Temp">
+      <created>1674135355313</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674135355313</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +180,7 @@
     <MESSAGE value="Style SQL Samples" />
     <MESSAGE value="Query" />
     <MESSAGE value="Ab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ab" />
+    <MESSAGE value="Temp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temp" />
   </component>
 </project>

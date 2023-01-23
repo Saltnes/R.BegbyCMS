@@ -44,7 +44,7 @@
             <asp:Label ID="LabelNumBoliger" runat="server" Text="LabelNumBoliger"></asp:Label>
             <br/>
             <br/>
-            Søk med telefonnummer
+            Søk med postnr
             <asp:TextBox ID="TextBoxSearchByPhone" runat="server"></asp:TextBox>
             <asp:Button ID="ButtonSearchByPhone" class="button" runat="server" Text="Søk"/>
             <br/>
