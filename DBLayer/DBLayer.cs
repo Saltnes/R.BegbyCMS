@@ -42,9 +42,9 @@ namespace DBLayer
                     "SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår FROM Bolig INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår WHERE Bolig.PostNr = @postnr",
                     conn);
                 cmd.CommandType = CommandType.Text;
-
-                //params here
-                param = new SqlParameter("@postnr", SqlDbType.NChar);
+                
+                
+                param = new SqlParameter("@postnr", SqlDbType.VarChar);
                 param.Value =
                     postnr;
                 cmd.Parameters.Add(param);

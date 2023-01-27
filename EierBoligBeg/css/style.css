@@ -61,7 +61,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1.2rem 10%;
+    padding: 10px 10%;
     background-color: #24252a;
     margin-bottom: 1rem;
 }
