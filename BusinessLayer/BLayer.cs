@@ -1,5 +1,4 @@
-﻿using System.Data;
-using DBLayer;
+﻿using DBLayer;
 
 namespace BusinessLayer
 {

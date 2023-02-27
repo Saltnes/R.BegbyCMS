@@ -1,5 +1,4 @@
-﻿using System;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -33,7 +32,7 @@ namespace DBLayer
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT content FROM Contents WHERE id = 1", conn);
+                SqlCommand cmd = new SqlCommand("SELECT TOP(1) content FROM Contents ORDER BY id DESC", conn);
                 cmd.CommandType = CommandType.Text;
 
                 SqlDataReader reader = cmd.ExecuteReader();

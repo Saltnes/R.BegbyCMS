@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using BusinessLayer;
 
 namespace DataTableSample
@@ -18,7 +10,9 @@ namespace DataTableSample
             if (!IsPostBack)
             {
                 Blayer bl = new Blayer();
-                LabelParagraph1.Text = bl.Content1();
+                string content1Text = bl.Content1();
+                LabelParagraph1.Text = content1Text;
+                TextParagraph1Edit.Text = content1Text;
             }
         }
 
@@ -26,7 +20,7 @@ namespace DataTableSample
         protected void ButtonSave_OnClick(object sender, EventArgs e)
         {
             Blayer bl = new Blayer();
-            bl.SaveWebContent1(TextParagraph1Edit.Text);
+            bl.SaveWebContent1(TextParagraph1Edit.Text); // ADD TIMESTAMP WHEN SAVING IN DbLAYER 
         }
     }
 }

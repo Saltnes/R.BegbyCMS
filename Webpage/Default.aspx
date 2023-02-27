@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DataTableSample.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DataTableSample.Default" ValidateRequest="false" %>
 
 <!DOCTYPE html>
 
@@ -40,12 +40,14 @@
 <form id="form1" runat="server">
     <div class="content">
         <div class="container">
-            <h1>Paragraph1</h1>
             <p>
                 <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
             </p>
             <br/>
-            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="5" Columns="50"></asp:TextBox>
+            <p>
+                <asp:Label ID="LabelParagraph2" runat="server" Text=""></asp:Label>
+            </p>
+            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="100"></asp:TextBox>
             <br/>
              <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Save to database"/>
         </div>
