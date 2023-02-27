@@ -70,6 +70,7 @@
     <Content Include="About.aspx" />
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Edit.aspx" />
     <Content Include="images\favicon.png" />
     <Content Include="images\image100q.webp" />
     <Content Include="images\image123.webp" />
@@ -78,7 +79,7 @@
     <Content Include="images\logo.svg" />
     <Content Include="images\width=2968.jpg" />
     <Content Include="JS\mobile.js" />
-    <Content Include="temp.txt" />
+    <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +96,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

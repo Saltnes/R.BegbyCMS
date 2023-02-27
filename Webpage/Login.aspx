@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DataTableSample.Default" ValidateRequest="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="DataTableSample.Login" %>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nb">
 <head runat="server">
@@ -24,7 +24,7 @@
             </li>
         </ul>
     </nav>
-    <a class="cta" href="Edit.aspx">Edit</a>
+    <a class="cta" href="Login.aspx">Edit</a>
     <p class="menu cta">Menu</p>
 </header>
 
@@ -40,9 +40,8 @@
 <form id="form1" runat="server">
     <div class="content">
         <div class="container">
-            <p>
-                <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
-            </p>
+            <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate" DestinationPageUrl="~/Edit.aspx"></asp:Login>
+            <asp:LoginStatus ID="LoginStatus1" runat="server" Visible="true"/>
         </div>
     </div>
     <footer>

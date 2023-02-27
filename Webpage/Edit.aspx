@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DataTableSample.Default" ValidateRequest="false" %>
+﻿<%@ Page Language="C#" CodeBehind="Edit.aspx.cs" Inherits="DataTableSample.Edit" ValidateRequest="false" %>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nb">
 <head runat="server">
@@ -43,6 +43,10 @@
             <p>
                 <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
             </p>
+            <br/>
+            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="100"></asp:TextBox>
+            <br/>
+             <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Save to database"/>
         </div>
     </div>
     <footer>
