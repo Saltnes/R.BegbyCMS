@@ -41,6 +41,12 @@
         <Compile Include="BLayer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\DBLayer\DBLayer.csproj">
+        <Project>{dc18e0ba-930d-4477-b18b-b0a87df2deca}</Project>
+        <Name>DBLayer</Name>
+      </ProjectReference>
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.

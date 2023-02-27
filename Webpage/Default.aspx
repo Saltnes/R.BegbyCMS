@@ -6,8 +6,8 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hus Oppslag</title>
-    <meta name="description" content="Find and search for houses and house owners">
+    <title>CMS</title>
+    <meta name="description" content="CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
@@ -40,20 +40,14 @@
 <form id="form1" runat="server">
     <div class="content">
         <div class="container">
-            Antall boliger i databasen:
-            <asp:Label ID="LabelNumBoliger" runat="server" Text="LabelNumBoliger"></asp:Label>
+            <h1>Paragraph1</h1>
+            <p>
+                <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
+            </p>
             <br/>
+            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="5" Columns="50"></asp:TextBox>
             <br/>
-            Søk med postnr
-            <label>PostNR: <asp:TextBox ID="TextBoxSearchByPhone" runat="server"></asp:TextBox></label>
-            <asp:Button ID="ButtonSearchByPhone" OnClick="ButtonSearchByPhone_OnClick" class="button" runat="server" Text="Søk"/>
-            <br/>
-            <asp:GridView ID="GridViewByPostnr" runat="server"></asp:GridView>
-            <br/>
-            <asp:Button ID="ButtonShowAllBoliger" OnClick="ButtonShowAllBoliger_OnClick" class="button" runat="server" Text="Vis alle Boliger"/>
-            <br/>
-            <asp:GridView ID="GridViewBoligEiere" runat="server"></asp:GridView>
-            <!--SEARCH BY BUILD YEAR | BETWEEN BUILD YEARS x=>y | SEARCH BY NAME | SEARCH BY PHONE NUMBER | SEARCH BY POSTNR |   -->
+             <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Save to database"/>
         </div>
     </div>
     <footer>

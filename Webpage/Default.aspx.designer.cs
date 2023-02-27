@@ -24,57 +24,30 @@ namespace DataTableSample
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LabelNumBoliger control.
+        /// LabelParagraph1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNumBoliger;
+        protected global::System.Web.UI.WebControls.Label LabelParagraph1;
 
         /// <summary>
-        /// TextBoxSearchByPhone control.
+        /// TextParagraph1Edit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxSearchByPhone;
+        protected global::System.Web.UI.WebControls.TextBox TextParagraph1Edit;
 
         /// <summary>
-        /// ButtonSearchByPhone control.
+        /// ButtonSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonSearchByPhone;
-
-        /// <summary>
-        /// GridViewByPostnr control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewByPostnr;
-
-        /// <summary>
-        /// ButtonShowAllBoliger control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonShowAllBoliger;
-
-        /// <summary>
-        /// GridViewBoligEiere control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewBoligEiere;
+        protected global::System.Web.UI.WebControls.Button ButtonSave;
     }
 }

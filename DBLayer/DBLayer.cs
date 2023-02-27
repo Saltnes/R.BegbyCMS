@@ -5,77 +5,49 @@ using System.Data.SqlClient;
 
 namespace DBLayer
 {
-    public class DBLayer
+    public class DbLayer
     {
-        public DataTable GetAllBolig()
+        public void SaveWebContent1(string content)
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["BoligEier"].ConnectionString;
+            var connectionString = ConfigurationManager.ConnectionStrings["Huan"].ConnectionString;
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Bolig", conn);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Contents (content) VALUES (@content)", conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@content", content);
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+        
+        public string GetWebContent()
+        {
+            var connectionString = ConfigurationManager.ConnectionStrings["Huan"].ConnectionString;
+            DataTable dt = new DataTable();
+            string textFromDb = "";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT content FROM Contents WHERE id = 1", conn);
                 cmd.CommandType = CommandType.Text;
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                dt.Load(reader);
-
+                while (reader.Read())
+                {
+                    textFromDb = (string)reader[0];
+                }
+                
                 reader.Close();
                 conn.Close();
             }
 
-            return dt;
-        }
-
-        public DataTable GetBoligInfoByPostnr(string postnr)
-        {
-            var connectionString = ConfigurationManager.ConnectionStrings["BoligEier"].ConnectionString;
-            DataTable dt = new DataTable();
-            SqlParameter param;
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(
-                    "SELECT Eier.Fornavn, Eier.Etternavn, Eier.Tlf, Bolig.PostNr, PostNr.Poststed, Bolig.Adresse,Bolig.Tomteareal, Bolig.Etasje, BoligType.Boligtype, Energimerking.Energimerking, Byggår.Byggår FROM Bolig INNER JOIN Bolig_Eiere ON Bolig.Bolig_id = Bolig_Eiere.Bolig_id INNER JOIN Eier ON Bolig_Eiere.Eier_id = Eier.Eier_id INNER JOIN Energimerking ON Bolig.Energi_id = Energimerking.Energi_id INNER JOIN BoligType ON Bolig.BType_id = BoligType.BType_id INNER JOIN PostNr ON Bolig.PostNr = PostNr.PostNr INNER JOIN Byggår ON Bolig.Byggår = Byggår.Byggår WHERE Bolig.PostNr = @postnr",
-                    conn);
-                cmd.CommandType = CommandType.Text;
-                
-                
-                param = new SqlParameter("@postnr", SqlDbType.VarChar);
-                param.Value =
-                    postnr;
-                cmd.Parameters.Add(param);
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                dt.Load(reader);
-
-                reader.Close();
-                conn.Close();
-            }
-
-            return dt;
-        }
-
-        public int GetNumOfBoliger()
-        {
-            var connectionString = ConfigurationManager.ConnectionStrings["BoligEier"].ConnectionString;
-            DataTable dt = new DataTable();
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT count(Bolig_id) from Bolig", conn);
-                cmd.CommandType = CommandType.Text;
-                int num = (Int32)cmd
-                    .ExecuteScalar(); //returner den første raden og den første kolonnen. sjekk i sql manager. Unboxing eksempel.
-
-                conn.Close();
-                return num;
-            }
+            return textFromDb;
         }
     }
 }
