@@ -77,6 +77,7 @@
     <Content Include="images\image85q.webp" />
     <Content Include="images\image95q.webp" />
     <Content Include="images\logo.svg" />
+    <Content Include="images\testimg.jpg" />
     <Content Include="images\width=2968.jpg" />
     <Content Include="JS\mobile.js" />
     <Content Include="Login.aspx" />

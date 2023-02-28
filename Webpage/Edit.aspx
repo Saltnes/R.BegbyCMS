@@ -12,6 +12,8 @@
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <header>
     <a class="logo" href="Default.aspx">
@@ -40,13 +42,15 @@
 <form id="form1" runat="server">
     <div class="content">
         <div class="container">
+            <p>USE HTML TAGS IN TEXTBOX TO FORMAT TEXT</p>
+            <br/>
             <p>
                 <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
             </p>
             <br/>
-            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="100"></asp:TextBox>
+            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="126"></asp:TextBox>
             <br/>
-             <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Save to database"/>
+            <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Publish" class="button"/>
         </div>
     </div>
     <footer>

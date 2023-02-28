@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -16,7 +17,11 @@ namespace DBLayer
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO Contents (content) VALUES (@content)", conn);
                 cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@content", content);
+
+                var param = new SqlParameter("@content", SqlDbType.VarChar);
+                param.Value =
+                    content;
+                cmd.Parameters.Add(param);
 
                 cmd.ExecuteNonQuery();
                 conn.Close();
