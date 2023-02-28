@@ -48,7 +48,7 @@
                 <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
             </p>
             <br/>
-            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="126"></asp:TextBox>
+            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="130" class="textbox"></asp:TextBox>
             <br/>
             <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Publish" class="button"/>
         </div>
