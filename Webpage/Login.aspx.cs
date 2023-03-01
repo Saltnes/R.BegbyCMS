@@ -12,7 +12,7 @@ namespace DataTableSample
         }
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            if (Login1.Password == "DorLomin")
+            if (Login1.Password == "")
             {
                 e.Authenticated = true;
                 Login1.Visible = false;
