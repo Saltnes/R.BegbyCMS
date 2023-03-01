@@ -48,9 +48,16 @@
                 <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
             </p>
             <br/>
-            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="130" class="textbox"></asp:TextBox>
+            <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="132" class="textbox"></asp:TextBox>
             <br/>
             <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Publish" class="button"/>
+            <br/>
+            <br/>
+            <h4>Image Upload:</h4>
+            <h5>Max file size: 4MB</h5>
+            <asp:FileUpload ID="FileUpload1" runat="server" class="button"/>
+            <br/>
+            <asp:Button ID="ButtonUpload" runat="server" OnClick="ButtonUpload_Click" Text="Upload" class="button"/>
         </div>
     </div>
     <footer>

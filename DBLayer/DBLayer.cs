@@ -15,19 +15,23 @@ namespace DBLayer
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Contents (content) VALUES (@content)", conn);
+                SqlCommand cmd =
+                    new SqlCommand("INSERT INTO Contents (content, date_published) VALUES (@content, @date_published)",
+                        conn);
                 cmd.CommandType = CommandType.Text;
-
-                var param = new SqlParameter("@content", SqlDbType.VarChar);
-                param.Value =
-                    content;
-                cmd.Parameters.Add(param);
+                var paramContent = new SqlParameter("@content", SqlDbType.VarChar);
+                paramContent.Value = content;
+                
+                cmd.Parameters.Add(paramContent);
+                var paramDatePublished = new SqlParameter("@date_published", SqlDbType.DateTime);
+                paramDatePublished.Value = DateTime.Now;
+                cmd.Parameters.Add(paramDatePublished);
 
                 cmd.ExecuteNonQuery();
                 conn.Close();
             }
         }
-        
+
         public string GetWebContent()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Huan"].ConnectionString;
@@ -46,7 +50,7 @@ namespace DBLayer
                 {
                     textFromDb = (string)reader[0];
                 }
-                
+
                 reader.Close();
                 conn.Close();
             }

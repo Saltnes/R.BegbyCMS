@@ -16,12 +16,18 @@ namespace DataTableSample
                 TextParagraph1Edit.Text = content1Text;
             }
         }
-
-
+        
+        
         protected void ButtonSave_OnClick(object sender, EventArgs e)
         {
             Blayer bl = new Blayer();
-            bl.SaveWebContent1(TextParagraph1Edit.Text); // ADD TIMESTAMP WHEN SAVING IN DbLAYER 
+            bl.SaveWebContent1(TextParagraph1Edit.Text); 
+        }
+
+        protected void ButtonUpload_Click(object sender, EventArgs e)
+        {
+            string imagesPath = Server.MapPath("~/images");
+            FileUpload1.SaveAs(imagesPath + "\\" + FileUpload1.FileName);
         }
     }
 }
