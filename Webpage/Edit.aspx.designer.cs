@@ -51,6 +51,33 @@ namespace DataTableSample
         protected global::System.Web.UI.WebControls.Button ButtonSave;
 
         /// <summary>
+        /// LabelParagraph2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelParagraph2;
+
+        /// <summary>
+        /// TextParagraph2Edit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextParagraph2Edit;
+
+        /// <summary>
+        /// ButtonSave2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonSave2;
+
+        /// <summary>
         /// FileUpload1 control.
         /// </summary>
         /// <remarks>

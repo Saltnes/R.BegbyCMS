@@ -24,6 +24,9 @@
             <li id="MoveToTop">
                 <a href="Default.aspx">Home</a>
             </li>
+            <li>
+                <a href="About.aspx">AI - Brukerstøtte</a>
+            </li>
         </ul>
     </nav>
     <a class="cta" href="Edit.aspx">Edit</a>
@@ -34,6 +37,7 @@
     <a class="close">&times;</a>
     <div class="overlay__content">
         <a href="Default.aspx">Home</a>
+        <a href="About.aspx">AI - Brukerstøtte</a>
         <a href="Edit.aspx">Edit</a>
     </div>
 </div>
@@ -48,10 +52,16 @@
                 <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
             </p>
             <br/>
+            <h2>Edit Home Page</h2>
             <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="132" class="textbox"></asp:TextBox>
             <br/>
             <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Publish" class="button"/>
             <br/>
+            <p><asp:Label ID="LabelParagraph2" runat="server" Text="Label"></asp:Label></p>
+            <h2>Edit AI Page</h2>
+            <asp:TextBox ID="TextParagraph2Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="132" class="textbox"></asp:TextBox>
+            <br/>
+            <asp:Button ID="ButtonSave2" OnClick="ButtonSave2_OnClick" runat="server" Text="Publish" class="button"/>
             <br/>
             <h4>Image Upload:</h4>
             <h5>Max file size: 4MB</h5>

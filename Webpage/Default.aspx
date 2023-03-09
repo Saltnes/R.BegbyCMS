@@ -24,6 +24,9 @@
             <li id="MoveToTop">
                 <a href="Default.aspx">Home</a>
             </li>
+            <li>
+                <a href="About.aspx">AI - Brukerstøtte</a>
+            </li>
         </ul>
     </nav>
     <a class="cta" href="Edit.aspx">Edit</a>
@@ -34,6 +37,7 @@
     <a class="close">&times;</a>
     <div class="overlay__content">
         <a href="Default.aspx">Home</a>
+        <a href="About.aspx">AI - Brukerstøtte</a>
         <a href="Edit.aspx">Edit</a>
     </div>
 </div>
