@@ -46,18 +46,24 @@
 <form id="form1" runat="server">
     <div class="content">
         <div class="container">
-            <p>USE HTML TAGS IN TEXTBOX TO FORMAT TEXT</p>
-            <br/>
             <p>
                 <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
             </p>
+            <br/>
+              <h2>----------------------------------------------------</h2>
+            <br/>
+            <p>
+                <asp:Label ID="LabelParagraph2" runat="server" Text="Label"></asp:Label>
+            </p>
+            <br/>
+            <br/>
+            <p><b><em>USE HTML TAGS IN TEXTBOX TO FORMAT TEXT</em></b></p>
             <br/>
             <h2>Edit Home Page</h2>
             <asp:TextBox ID="TextParagraph1Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="132" class="textbox"></asp:TextBox>
             <br/>
             <asp:Button ID="ButtonSave" OnClick="ButtonSave_OnClick" runat="server" Text="Publish" class="button"/>
             <br/>
-            <p><asp:Label ID="LabelParagraph2" runat="server" Text="Label"></asp:Label></p>
             <h2>Edit AI Page</h2>
             <asp:TextBox ID="TextParagraph2Edit" runat="server" TextMode="MultiLine" Rows="15" Columns="132" class="textbox"></asp:TextBox>
             <br/>
