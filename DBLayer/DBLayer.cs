@@ -7,7 +7,7 @@ namespace DBLayer
 {
     public class DbLayer
     {
-        public void SaveWebContent1(string content)
+        public DataTable GetAllElev()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Huan"].ConnectionString;
             DataTable dt = new DataTable();
@@ -15,76 +15,52 @@ namespace DBLayer
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd =
-                    new SqlCommand("INSERT INTO Contents (content, date_published) VALUES (@content, @date_published)",
-                        conn);
-                cmd.CommandType = CommandType.Text;
-                var paramContent = new SqlParameter("@content", SqlDbType.VarChar);
-                paramContent.Value = content;
-
-                cmd.Parameters.Add(paramContent);
-                var paramDatePublished = new SqlParameter("@date_published", SqlDbType.DateTime);
-                paramDatePublished.Value = DateTime.Now;
-                cmd.Parameters.Add(paramDatePublished);
-
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
-        }
-
-        public string GetWebContent()
-        {
-            var connectionString = ConfigurationManager.ConnectionStrings["Huan"].ConnectionString;
-            DataTable dt = new DataTable();
-            string textFromDb = "";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT TOP(1) content FROM Contents ORDER BY id DESC", conn);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Elev", conn);
                 cmd.CommandType = CommandType.Text;
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    textFromDb = (string)reader[0];
-                }
+                dt.Load(reader);
 
                 reader.Close();
                 conn.Close();
             }
 
-            return textFromDb;
+            return dt;
         }
 
-        public string GetWebContent2()
+        public DataTable GetInfoFromFornavn(string fornavn)
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Huan"].ConnectionString;
             DataTable dt = new DataTable();
-            string textFromDb = "";
+            SqlParameter param;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT TOP(1) content FROM Contents2 ORDER BY id DESC", conn);
+                SqlCommand cmd = new SqlCommand(
+                    "SELECT Elev.Fornavn, Elev.Etternavn, Fag.Fagnavn, Elev.Adresse, Elev.PostNr, Poststeder.Poststed, Elev.KlasseID, Klasse.KlasseNavn FROM Elev INNER JOIN Klasse ON Elev.KlasseID = Klasse.KlasseID INNER JOIN FagElev ON Elev.ElevID = FagElev.ElevID INNER JOIN Fag ON FagElev.FagKode = Fag.FagKode INNER JOIN Poststeder ON Elev.PostNr = Poststeder.PostNr WHERE Elev.Fornavn = @Fornavn"
+                    , conn);
                 cmd.CommandType = CommandType.Text;
+
+
+                param = new SqlParameter("@Fornavn", SqlDbType.VarChar);
+                param.Value =
+                    fornavn;
+                cmd.Parameters.Add(param);
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    textFromDb = (string)reader[0];
-                }
+                dt.Load(reader);
 
                 reader.Close();
                 conn.Close();
             }
 
-            return textFromDb;
+            return dt;
         }
 
-        public void SaveWebContent2(string content)
+        public int GetNumOfElever()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Huan"].ConnectionString;
             DataTable dt = new DataTable();
@@ -92,20 +68,13 @@ namespace DBLayer
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd =
-                    new SqlCommand("INSERT INTO Contents2 (content, date_published) VALUES (@content, @date_published)",
-                        conn);
+                SqlCommand cmd = new SqlCommand("SELECT count(ElevID) from Elev", conn);
                 cmd.CommandType = CommandType.Text;
-                var paramContent = new SqlParameter("@content", SqlDbType.VarChar);
-                paramContent.Value = content;
+                int num = (Int32)cmd
+                    .ExecuteScalar(); 
 
-                cmd.Parameters.Add(paramContent);
-                var paramDatePublished = new SqlParameter("@date_published", SqlDbType.DateTime);
-                paramDatePublished.Value = DateTime.Now;
-                cmd.Parameters.Add(paramDatePublished);
-
-                cmd.ExecuteNonQuery();
                 conn.Close();
+                return num;
             }
         }
     }

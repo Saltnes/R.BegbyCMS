@@ -67,10 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
-    <Content Include="Edit.aspx" />
     <Content Include="images\favicon.png" />
     <Content Include="images\image100q.webp" />
     <Content Include="images\image123.webp" />
@@ -80,37 +78,16 @@
     <Content Include="images\testimg.jpg" />
     <Content Include="images\width=2968.jpg" />
     <Content Include="JS\mobile.js" />
-    <Content Include="Login.aspx" />
+    <Content Include="SQL" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Edit.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -127,6 +104,10 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{1f8a08e3-cefb-46f2-9d16-0bb67329950f}</Project>
       <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBLayer\DBLayer.csproj">
+      <Project>{dc18e0ba-930d-4477-b18b-b0a87df2deca}</Project>
+      <Name>DBLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DataTableSample.Default" ValidateRequest="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DataTableSample.Default" %>
 
 <!DOCTYPE html>
 
@@ -6,14 +6,12 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CMS</title>
-    <meta name="description" content="CMS">
+    <title>Hus Oppslag</title>
+    <meta name="description" content="Find and search for houses and house owners">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <header>
     <a class="logo" href="Default.aspx">
@@ -24,12 +22,9 @@
             <li id="MoveToTop">
                 <a href="Default.aspx">Home</a>
             </li>
-            <li>
-                <a href="About.aspx">AI - Brukerstøtte</a>
-            </li>
         </ul>
     </nav>
-    <a class="cta" href="Edit.aspx">Edit</a>
+    <a class="cta" href="About.aspx">About</a>
     <p class="menu cta">Menu</p>
 </header>
 
@@ -37,8 +32,7 @@
     <a class="close">&times;</a>
     <div class="overlay__content">
         <a href="Default.aspx">Home</a>
-        <a href="About.aspx">AI - Brukerstøtte</a>
-        <a href="Edit.aspx">Edit</a>
+        <a href="About.aspx">About</a>
     </div>
 </div>
 
@@ -46,9 +40,20 @@
 <form id="form1" runat="server">
     <div class="content">
         <div class="container">
-            <p>
-                <asp:Label ID="LabelParagraph1" runat="server" Text="Label"></asp:Label>
-            </p>
+            Søk med elevens
+            <label>Fornavn: <asp:TextBox ID="TextBoxSearchByFornavn" runat="server"></asp:TextBox></label>
+            <asp:Button ID="ButtonSearchByFornavn" OnClick="ButtonSearchByFornavn_OnClick" class="button" runat="server" Text="Søk"/>
+            <br/>
+            <asp:GridView ID="GridViewByFornavn" runat="server"></asp:GridView>
+            <br/>
+            <br/>
+            <asp:GridView ID="GridViewElever" runat="server"></asp:GridView>
+             <br/>
+            <br/>
+             Antall elever:
+            <asp:Label ID="LabelNumElever" runat="server" Text="LabelNumElever"></asp:Label>
+           
+            
         </div>
     </div>
     <footer>
